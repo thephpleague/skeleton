@@ -1,0 +1,27 @@
+{
+    "name": "league/:package_name",
+    "description": ":package_description",
+    "keywords": [
+        "league",
+        "package"
+    ],
+    "homepage": "https://github.com/php-loep/:package_name",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": ":author_name",
+            "email": ":author_email",
+            "homepage": ":author_website",
+            "role": "Developer"
+        }
+    ],
+    "require-dev": {
+        "silex/silex": "~1.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "League": ["src", "tests"],
+            "Silex\\Provider": "src"
+        }
+    }
+}
