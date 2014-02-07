@@ -1,6 +1,6 @@
 # League Skeleton
 
-[![Build Status](https://travis-ci.org/php-loep/statsd.png?branch=master)](https://travis-ci.org/php-loep/statsd)
+[![Build Status](https://travis-ci.org/thephpleague/statsd.png?branch=master)](https://travis-ci.org/thephpleague/statsd)
 [![Total Downloads](https://poser.pugx.org/league/statsd/downloads.png)](https://packagist.org/packages/league/statsd)
 [![Latest Stable Version](https://poser.pugx.org/league/statsd/v/stable.png)](https://packagist.org/packages/league/statsd)
 
@@ -40,15 +40,15 @@ $ phpunit
 
 ## Contributing
 
-Please see [CONTRIBUTING](https://github.com/php-loep/:package_name/blob/master/CONTRIBUTING.md) for details.
+Please see [CONTRIBUTING](https://github.com/thephpleague/:package_name/blob/master/CONTRIBUTING.md) for details.
 
 
 ## Credits
 
 - [:author_name](https://github.com/:author_username)
-- [All Contributors](https://github.com/php-loep/:package_name/contributors)
+- [All Contributors](https://github.com/thephpleague/:package_name/contributors)
 
 
 ## License
 
-The MIT License (MIT). Please see [License File](https://github.com/php-loep/:package_name/blob/master/LICENSE) for more information.
+The MIT License (MIT). Please see [License File](https://github.com/thephpleague/:package_name/blob/master/LICENSE) for more information.
