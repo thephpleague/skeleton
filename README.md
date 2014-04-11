@@ -4,7 +4,7 @@
 [![Total Downloads](https://poser.pugx.org/league/statsd/downloads.png)](https://packagist.org/packages/league/statsd)
 [![Latest Stable Version](https://poser.pugx.org/league/statsd/v/stable.png)](https://packagist.org/packages/league/statsd)
 
-**Replace Statsd with your own package name in the above URLs**
+**Replace Skeleton with your own package name in the above URLs**
 
 :package_description
 
