@@ -10,18 +10,30 @@
     "authors": [
         {
             "name": ":author_name",
-            "email": ":author_email",
-            "homepage": ":author_website",
+            "email": "author_email@example.com",
+            "homepage": "http://author-website.example.com",
             "role": "Developer"
         }
     ],
     "require-dev": {
-        "silex/silex": "~1.0"
+        "php" : ">=5.3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "4.*"
     },
     "autoload": {
-        "psr-0": {
-            "League": ["src", "tests"],
-            "Silex\\Provider": "src"
+        "psr-4": {
+            "League\\Skeleton\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "League\\Skeleton\\Test\\": "tests"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
         }
     }
 }

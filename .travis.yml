@@ -8,11 +8,12 @@ php:
   - hhvm
 
 before_script:
-  - composer self-update
-  - composer install
-  - pyrus install pear/PHP_CodeSniffer
-  - phpenv rehash
+  - travis_retry composer self-update
+  - travis_retry composer install --no-interaction --prefer-source --dev
 
 script:
-  - phpcs --standard=psr2 src/
-  - phpunit --coverage-text
+  - phpunit --coverage-text --coverage-clover=coverage.clover
+
+after_script:
+  - wget https://scrutinizer-ci.com/ocular.phar
+  - php ocular.phar code-coverage:upload --format=php-clover coverage.clover
