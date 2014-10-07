@@ -1,13 +1,15 @@
 # League Skeleton
 
-[![Build Status](https://travis-ci.org/thephpleague/statsd.png?branch=master)](https://travis-ci.org/thephpleague/statsd)
-[![Total Downloads](https://poser.pugx.org/league/statsd/downloads.png)](https://packagist.org/packages/league/statsd)
-[![Latest Stable Version](https://poser.pugx.org/league/statsd/v/stable.png)](https://packagist.org/packages/league/statsd)
+[![Latest Version](https://img.shields.io/github/release/thephpleague/skeleton.svg?style=flat-square)](https://github.com/thephpleague/skeleton/releases)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
+[![Build Status](https://img.shields.io/travis/thephpleague/skeleton/master.svg?style=flat-square)](https://travis-ci.org/thephpleague/skeleton)
+[![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/thephpleague/skeleton.svg?style=flat-square)](https://scrutinizer-ci.com/g/thephpleague/skeleton/code-structure)
+[![Quality Score](https://img.shields.io/scrutinizer/g/thephpleague/skeleton.svg?style=flat-square)](https://scrutinizer-ci.com/g/thephpleague/skeleton)
+[![Total Downloads](https://img.shields.io/packagist/dt/league/skeleton.svg?style=flat-square)](https://packagist.org/packages/league/skeleton)
 
 **Replace Skeleton with your own package name in the above URLs**
 
 :package_description
-
 
 ## Install
 
@@ -21,7 +23,6 @@ Via Composer
 }
 ```
 
-
 ## Usage
 
 ``` php
@@ -30,24 +31,20 @@ echo $skeleton->echoPhrase('Hello, League!');
 
 ```
 
-
 ## Testing
 
 ``` bash
 $ phpunit
 ```
 
-
 ## Contributing
 
 Please see [CONTRIBUTING](https://github.com/thephpleague/:package_name/blob/master/CONTRIBUTING.md) for details.
-
 
 ## Credits
 
 - [:author_name](https://github.com/:author_username)
 - [All Contributors](https://github.com/thephpleague/:package_name/contributors)
-
 
 ## License
 
