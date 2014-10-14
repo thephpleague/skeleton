@@ -7,20 +7,17 @@
 [![Quality Score](https://img.shields.io/scrutinizer/g/thephpleague/skeleton.svg?style=flat-square)](https://scrutinizer-ci.com/g/thephpleague/skeleton)
 [![Total Downloads](https://img.shields.io/packagist/dt/league/skeleton.svg?style=flat-square)](https://packagist.org/packages/league/skeleton)
 
-**Replace Skeleton with your own package name in the above URLs**
+**Note:** Replace `skeleton` with the correct package name in the above URLs, then delete this line.
 
-:package_description
+This is where you description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what
+PSRs you support to avoid any confusion with users and contributors.
 
 ## Install
 
 Via Composer
 
-``` json
-{
-    "require": {
-        "league/:package_name": "~1.0"
-    }
-}
+``` bash
+$ php composer.phar require league/skeleton:~1.0
 ```
 
 ## Usage
