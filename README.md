@@ -17,7 +17,7 @@ PSRs you support to avoid any confusion with users and contributors.
 Via Composer
 
 ``` bash
-$ php composer.phar require league/skeleton
+$ composer require league/skeleton
 ```
 
 ## Usage
