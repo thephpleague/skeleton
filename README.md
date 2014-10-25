@@ -45,4 +45,4 @@ Please see [CONTRIBUTING](https://github.com/thephpleague/:package_name/blob/mas
 
 ## License
 
-The MIT License (MIT). Please see [License File](https://github.com/thephpleague/:package_name/blob/master/LICENSE) for more information.
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
