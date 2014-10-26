@@ -31,6 +31,15 @@
             "League\\Skeleton\\Test\\": "tests"
         }
     },
+    "archive": {
+        "exclude": [
+            "tests",
+            "phpunit.xml.dist",
+            "scrutinizer.yml",
+            ".travis.yml",
+            ".gitignore"
+        ]
+    },
     "extra": {
         "branch-alias": {
             "dev-master": "1.0-dev"
