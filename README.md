@@ -25,7 +25,6 @@ $ composer require league/skeleton
 ``` php
 $skeleton = new League\Skeleton();
 echo $skeleton->echoPhrase('Hello, League!');
-
 ```
 
 ## Testing
