@@ -3,15 +3,15 @@
     "description": ":package_description",
     "keywords": [
         "league",
-        "package"
+        ":package_name"
     ],
-    "homepage": "https://github.com/php-loep/:package_name",
+    "homepage": "https://github.com/thephpleague/:package_name",
     "license": "MIT",
     "authors": [
         {
             "name": ":author_name",
-            "email": "author_email@example.com",
-            "homepage": "http://author-website.example.com",
+            "email": ":author_email",
+            "homepage": ":author_website",
             "role": "Developer"
         }
     ],
