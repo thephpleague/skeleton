@@ -37,6 +37,10 @@ $ phpunit
 
 Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
+## Security
+
+If you discover any security related issues, please email :author_email instead of using the issue tracker.
+
 ## Credits
 
 - [:author_name](https://github.com/:author_username)
