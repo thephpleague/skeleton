@@ -1,0 +1,22 @@
+<?php
+
+use Symfony\Component\Process\Process;
+
+class StyleTest extends PHPUnit_Framework_TestCase
+{
+    /**
+     * @test
+     */
+    public function it_passes_style_guidelines()
+    {
+        $process = new Process({{command}});
+        $process->setTimeout(3600);
+        $process->run();
+
+        $output = $process->getOutput();
+
+        if (stristr($output, "| WARNING |")) {
+            $this->fail($output);
+        }
+    }
+}
