@@ -1,5 +1,5 @@
 {
-    "name": "league/:package_name",
+    "name": "league/skeleton",
     "description": ":package_description",
     "keywords": [
         "league",
