@@ -1,0 +1,29 @@
+{
+  "name": ":package_name",
+  "version": "1.0",
+  "description": ":package_description",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "phpunit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thephpleague/:package_name"
+  },
+  "keywords": [
+    "league",
+    ":package_name"
+  ],
+  "author": ":author_name <:author_email> (:author_website)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thephpleague/:package_name/issues"
+  },
+  "homepage": "https://github.com/thephpleague/:package_name",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-phpcs": "^0.5.0"
+  }
+}
