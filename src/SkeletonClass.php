@@ -4,12 +4,12 @@ namespace League\Skeleton;
 
 class SkeletonClass
 {
-
     /**
      * Create a new Skeleton Instance
      */
     public function __construct()
     {
+        // constructor body
     }
 
     /**
