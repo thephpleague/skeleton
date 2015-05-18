@@ -10,10 +10,13 @@ php:
 matrix:
   allow_failures:
     - php: 7.0
+  include:
+    - php: 5.4
+      env: 'COMPOSER_FLAGS="--prefer-stable --prefer-lowest"'
 
 before_script:
   - travis_retry composer self-update
-  - travis_retry composer install --no-interaction --prefer-source
+  - travis_retry composer update ${COMPOSER_FLAGS} --no-interaction --prefer-source
 
 script:
   - phpunit --coverage-text --coverage-clover=coverage.clover
