@@ -36,7 +36,8 @@
     },
     "scripts": {
         "test": "phpunit",
-        "format": "phpcbf --standard=psr2 src/"
+        "check-codestyle": "phpcs -p --standard=PSR2 src tests",
+        "fix-codestyle": "phpcbf  -p --standard=PSR2 src tests"
     },
     "extra": {
         "branch-alias": {
