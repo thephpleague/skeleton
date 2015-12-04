@@ -1,11 +1,11 @@
 {
-    "name": "league/:package_name",
+    "name": ":vendor/:package_name",
     "description": ":package_description",
     "keywords": [
-        "league",
+        ":vendor",
         ":package_name"
     ],
-    "homepage": "https://github.com/thephpleague/:package_name",
+    "homepage": "https://github.com/:vendor/:package_name",
     "license": "MIT",
     "authors": [
         {
@@ -24,12 +24,12 @@
     },
     "autoload": {
         "psr-4": {
-            "League\\Skeleton\\": "src"
+            ":vendor\\:package_name\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "League\\Skeleton\\Test\\": "tests"
+            ":vendor\\:package_name\\Test\\": "tests"
         }
     },
     "scripts": {
