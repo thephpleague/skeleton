@@ -20,7 +20,8 @@
     },
     "require-dev": {
         "phpunit/phpunit" : "4.*",
-        "scrutinizer/ocular": "~1.1"
+        "scrutinizer/ocular": "~1.1",
+        "squizlabs/php_codesniffer": "~2.2"
     },
     "autoload": {
         "psr-4": {
@@ -33,6 +34,7 @@
         }
     },
     "scripts": {
+        "sniff": "./vendor/bin/phpcs src/ --standard=PSR2 --report=summary",
         "test": "phpunit"
     },
     "extra": {
