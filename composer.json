@@ -1,5 +1,6 @@
 {
     "name": ":vendor/:package_name",
+    "type": "library",
     "description": ":package_description",
     "keywords": [
         ":vendor",
