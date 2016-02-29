@@ -31,7 +31,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            ":vendor\\:package_name\\Test\\": "tests"
+            ":vendor\\:package_name\\": "tests"
         }
     },
     "scripts": {
