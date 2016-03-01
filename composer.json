@@ -35,7 +35,7 @@
         }
     },
     "scripts": {
-        "test": "phpunit"
+        "test": "php vendor/phpunit/phpunit/phpunit"
     },
     "extra": {
         "branch-alias": {
