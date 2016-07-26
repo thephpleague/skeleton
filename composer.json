@@ -35,8 +35,8 @@
         }
     },
     "scripts": {
-        "test": "phpunit",
-        "format": "phpcbf --standard=psr2 src/"
+        "test": "vendor/bin/phpunit",
+        "format": "vendor/bin/phpcbf --standard=psr2 src/"
     },
     "extra": {
         "branch-alias": {
