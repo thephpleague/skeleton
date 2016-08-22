@@ -20,38 +20,19 @@ $fields = [
 $values = [];
 
 $replacements = [
-    ':vendor\\\\:package_name\\\\' => function () use (&$values) {
-        return str_replace('\\', '\\\\', $values['psr4_namespace']) . '\\\\';
-    },
-    ':author_name' => function () use (&$values) {
-        return $values['author_name'];
-    },
-    ':author_username' => function () use (&$values) {
-        return $values['author_github_username'];
-    },
-    ':author_website' => function () use (&$values) {
-        return $values['author_website'] ?: ('https://github.com/' . $values['author_github_username']);
-    },
-    ':author_email' => function () use (&$values) {
-        return $values['author_email'] ?: ($values['author_github_username'] . '@example.com');
-    },
-    ':vendor' => function () use (&$values) {
-        return $values['package_vendor'];
-    },
-    ':package_name' => function () use (&$values) {
-        return $values['package_name'];
-    },
-    ':package_description' => function () use (&$values) {
-        return $values['package_description'];
-    },
-    'League\\Skeleton' => function () use (&$values) {
-        return $values['psr4_namespace'];
-    },
+    ':vendor\\\\:package_name\\\\' => function () use(&$values) { return str_replace('\\', '\\\\', $values['psr4_namespace']) . '\\\\'; },
+    ':author_name'                 => function () use(&$values) { return $values['author_name']; },
+    ':author_username'             => function () use(&$values) { return $values['author_github_username']; },
+    ':author_website'              => function () use(&$values) { return $values['author_website'] ?: ('https://github.com/' . $values['author_github_username']); },
+    ':author_email'                => function () use(&$values) { return $values['author_email'] ?: ($values['author_github_username'] . '@example.com'); },
+    ':vendor'                      => function () use(&$values) { return $values['package_vendor']; },
+    ':package_name'                => function () use(&$values) { return $values['package_name']; },
+    ':package_description'         => function () use(&$values) { return $values['package_description']; },
+    'League\\Skeleton'             => function () use(&$values) { return $values['psr4_namespace']; },
 ];
 
-function read_from_console($prompt)
-{
-    if (function_exists('readline')) {
+function read_from_console ($prompt) {
+    if ( function_exists('readline') ) {
         $line = trim(readline($prompt));
         if (!empty($line)) {
             readline_add_history($line);
@@ -125,4 +106,4 @@ foreach ($files as $f) {
 }
 
 echo "Done.\n";
-echo "Now you can remove the file '" . basename(__FILE__) . "'.\n";
+echo "Now you should remove the file '" . basename(__FILE__) . "'.\n";
