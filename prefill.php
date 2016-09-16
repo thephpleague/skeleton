@@ -13,7 +13,7 @@ $fields = [
     'package_vendor' =>         ['Package vendor',        '<vendor> in https://github.com/vendor/package',   '{author_github_username}'],
     'package_name' =>           ['Package name',          '<package> in https://github.com/vendor/package',  ''],
     'package_description' =>    ['Package very short description',   '',                                     ''],
-    
+
     'psr4_namespace' =>         ['PSR-4 namespace',       'usually, Vendor\\Package',                        '{package_vendor}\\{package_name}'],
 ];
 
@@ -61,9 +61,9 @@ do {
     if ($modify == 'q') {
         exit;
     }
-    
+
     $values = [];
-    
+
     echo "----------------------------------------------------------------------\n";
     echo "Please, provide the following information:\n";
     echo "----------------------------------------------------------------------\n";
@@ -81,7 +81,7 @@ do {
         }
     }
     echo "\n";
-    
+
     echo "----------------------------------------------------------------------\n";
     echo "Please, check that everything is correct:\n";
     echo "----------------------------------------------------------------------\n";
@@ -94,6 +94,7 @@ echo "\n";
 
 $files = array_merge(
     glob(__DIR__ . '/*.md'),
+    glob(__DIR__ . '/*.xml.dist'),
     glob(__DIR__ . '/composer.json'),
     glob(__DIR__ . '/src/*.php')
 );
