@@ -20,7 +20,7 @@ If any of the following are applicable to your project, then the directory struc
 bin/        
 config/
 src/
-test/
+tests/
 vendor/
 ```
 
