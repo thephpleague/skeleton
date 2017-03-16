@@ -97,7 +97,7 @@ $files = array_merge(
     glob(__DIR__ . '/*.xml.dist'),
     glob(__DIR__ . '/composer.json'),
     glob(__DIR__ . '/src/*.php'),
-    glob(__DIR__ . '/tests/*.php'),
+    glob(__DIR__ . '/tests/*.php')
 );
 foreach ($files as $f) {
     $contents = file_get_contents($f);
