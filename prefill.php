@@ -17,9 +17,7 @@ $fields = [
     'psr4_namespace' =>         ['PSR-4 namespace',       'usually, Vendor\\Package',                        '{package_vendor}\\{package_name}'],
 ];
 
-$values = [
-
-];
+$values = [];
 
 $replacements = [
     ':vendor\\\\:package_name\\\\' => function () use(&$values) { return str_replace('\\', '\\\\', $values['psr4_namespace']) . '\\\\'; },
