@@ -17,7 +17,9 @@ $fields = [
     'psr4_namespace' =>         ['PSR-4 namespace',       'usually, Vendor\\Package',                        '{package_vendor}\\{package_name}'],
 ];
 
-$values = [];
+$values = [
+
+];
 
 $replacements = [
     ':vendor\\\\:package_name\\\\' => function () use(&$values) { return str_replace('\\', '\\\\', $values['psr4_namespace']) . '\\\\'; },
@@ -97,7 +99,7 @@ $files = array_merge(
     glob(__DIR__ . '/*.xml.dist'),
     glob(__DIR__ . '/composer.json'),
     glob(__DIR__ . '/src/*.php'),
-    glob(__DIR__ . '/tests/*.php'),
+    glob(__DIR__ . '/tests/*.php')
 );
 foreach ($files as $f) {
     $contents = file_get_contents($f);
