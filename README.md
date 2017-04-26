@@ -24,6 +24,12 @@ tests/
 vendor/
 ```
 
+## Git hooks
+
+This project has [ebastianfeldmann/captainhook](https://github.com/sebastianfeldmann/captainhook) installed. This will:
+
+ - Run `composer check-style` on pre-commit to check that the PSR2 standard is kept
+ - Run `composer test` on pre-push to run tests to ensure any broken tests are not pushed
 
 ## Install
 

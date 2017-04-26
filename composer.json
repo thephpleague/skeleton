@@ -21,7 +21,8 @@
     },
     "require-dev": {
         "phpunit/phpunit" : "~4.0||~5.0||~6.0",
-        "squizlabs/php_codesniffer": "^2.3"
+        "squizlabs/php_codesniffer": "^2.3",
+        "sebastianfeldmann/captainhook": "^2.0"
     },
     "autoload": {
         "psr-4": {
@@ -36,7 +37,8 @@
     "scripts": {
         "test": "phpunit",
         "check-style": "phpcs -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests",
-        "fix-style": "phpcbf -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests"
+        "fix-style": "phpcbf -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests",
+        "remove-git-hooks": "rm ./.git/hooks/*"
     },
     "extra": {
         "branch-alias": {
