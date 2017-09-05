@@ -14,7 +14,7 @@ $fields = [
     'package_name' =>           ['Package name',          '<package> in https://github.com/vendor/package',  ''],
     'package_description' =>    ['Package very short description',   '',                                     ''],
 
-    'psr4_namespace' =>         ['PSR-4 namespace',       'usually, Vendor\\Package',                        '{package_vendor}\\{package_name}'],
+    'psr4_namespace' =>         ['PSR-4 namespace',       'usually, Vendor\\Package',                        '{psr_vendor}\\{psr_package}'],
 ];
 
 $values = [];
@@ -56,6 +56,11 @@ function interpolate($text, $values)
     return $text;
 }
 
+function camelize($text)
+{
+    return strtr(ucwords(strtr($text, ['-' => ' ', '_' => ' ', '.' => '_ '])), [' ' => '']);
+}
+
 $modify = 'n';
 do {
     if ($modify == 'q') {
@@ -78,6 +83,12 @@ do {
         $values[$f] = read_from_console($prompt);
         if (empty($values[$f])) {
             $values[$f] = $default;
+        }
+        if ($f == 'package_vendor') {
+            $values['psr_vendor'] = camelize($values[$f]);
+        }
+        if ($f == 'package_name') {
+            $values['psr_package'] = camelize($values[$f]);
         }
     }
     echo "\n";
