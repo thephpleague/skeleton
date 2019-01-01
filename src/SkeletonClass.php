@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace League\Skeleton;
 
 class SkeletonClass
@@ -19,7 +21,7 @@ class SkeletonClass
      *
      * @return string Returns the phrase passed in
      */
-    public function echoPhrase($phrase)
+    public function echoPhrase(string $phrase): string
     {
         return $phrase;
     }
