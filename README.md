@@ -18,6 +18,8 @@ If any of the following are applicable to your project, then the directory struc
 
 ```
 bin/        
+build/
+docs/
 config/
 src/
 tests/
