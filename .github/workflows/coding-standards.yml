@@ -56,4 +56,4 @@ jobs:
               run: "composer install --no-interaction --no-progress --no-suggest"
 
             - name: "Coding Standard"
-              run: "vendor/bin/phpcs"
+              run: "vendor/bin/phpcs --standard=psr2 src/"
