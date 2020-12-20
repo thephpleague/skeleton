@@ -33,15 +33,7 @@ jobs:
                   coverage: "pcov"
                   php-version: "${{ matrix.php-version }}"
                   ini-values: memory_limit=-1
-
-            - name: "Cache dependencies"
-              uses: "actions/cache@v2"
-              with:
-                  path: |
-                      ~/.composer/cache
-                      vendor
-                  key: "php-${{ matrix.php-version }}-${{ matrix.dependencies }}"
-                  restore-keys: "php-${{ matrix.php-version }}-${{ matrix.dependencies }}"
+                  tools: composer:v2
 
             - name: "Install lowest dependencies"
               if: ${{ matrix.dependencies == 'lowest' }}
