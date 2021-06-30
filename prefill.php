@@ -11,7 +11,7 @@ $fields = [
     'author_website' =>         ['Your website',          '',                                                'https://github.com/{author_github_username}'],
 
     'package_vendor' =>         ['Package vendor',        '<vendor> in https://github.com/vendor/package',   '{author_github_username}'],
-    'package_name' =>           ['Package name',          '<package> in https://github.com/vendor/package',  ''],
+    'package_name' =>           ['Package name',          '<package> in https://github.com/vendor/package',  basename(__DIR__)],
     'package_description' =>    ['Package very short description',   '',                                     ''],
 
     'psr4_namespace' =>         ['PSR-4 namespace',       'usually, Vendor\\Package',                        '{package_vendor}\\{package_name}'],
